@@ -137,7 +137,7 @@ never create a duplicate thread in response to a read-only lookup failure.
 
 **Logged**: 2026-08-16T04:20:00-07:00
 **Priority**: medium
-**Status**: pending
+**Status**: resolved
 **Area**: infra
 
 ### Summary
@@ -165,6 +165,12 @@ fallback, and keep the fallback/reporting explicit.
 ### Metadata
 - Reproducible: yes
 - Related Files: none
+
+### Resolution
+- **Resolved**: 2026-08-16T07:21:00-07:00
+- **Notes**: Published an exact 47-file snapshot with the Git Data API on a
+  branch parented to remote `main`; verified every blob SHA and mode, opened PR
+  #1, confirmed `mergeable_state: clean`, and merged without force-pushing.
 
 ---
 
