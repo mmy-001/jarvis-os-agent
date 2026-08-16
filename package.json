@@ -1,0 +1,1 @@
+{"name":"jarvis-os-agent","version":"0.0.0","private":true,"type":"module","engines":{"node":">=22"},"scripts":{"test":"vitest run","test:all":"vitest run --coverage.enabled=false","typecheck":"tsc --noEmit"},"devDependencies":{"@types/node":"^22.0.0","typescript":"^5.7.0","vitest":"^3.0.0"}}
