@@ -1,6 +1,6 @@
 # JARVIS P0 L3 refusal-slice progress
 
-**Status:** Tasks 1–9 are reviewed and integrated into `dev`; final GitHub delivery is in progress.
+**Status:** Complete — Tasks 1–9 are reviewed, integrated into `dev`, and delivered to GitHub `main` through PR #1.
 
 ## Scope lock
 
@@ -12,7 +12,7 @@ No real model, secret, child process, network client, external account adapter, 
 
 - Plan: `docs/superpowers/plans/2026-08-16-jarvis-p0-l3-refusal-slice.md`
 - Architecture baseline: `docs/superpowers/specs/2026-08-16-jarvis-p0-architecture-baseline.md`
-- Current implementation task: GitHub pull-request synchronization and delivery receipt.
+- Current implementation task: none; the next product slice begins from this reviewed P0 baseline.
 - Completed implementation tasks: Task 1, Task 2, Task 3, Task 4, Task 5, Task 6, Task 7, Task 8, and Task 9.
 
 ## Branch and worktree convention
@@ -48,3 +48,5 @@ No real model, secret, child process, network client, external account adapter, 
 - Local integration: reviewed Task 8 merged into `dev` at `0948712`; controller verification on the merged tree passed `npm ci`, `npm run typecheck`, 64/64 tests, `git diff --check`, tracked-artifact scan, production secret/debug scan, and the focused forbidden-capability suite.
 - Task 9: complete (`9035a6d..a2b5bd3`, three implementation/re-review rounds; final independent verdict `Ready to merge: Yes`). It adds one production logical resource-ID validator shared by ActionIntent and independent Windows/macOS fake path policies, rejects traversal and ambiguous platform-path forms before Core activity, and removes the complete-diff EOF warnings.
 - Local integration: reviewed Task 9 merged into `dev` at `e580f60`; controller verification on the merged tree passed `npm ci`, `npm run typecheck`, 95/95 tests, silent `git diff --check 3078270..HEAD`, tracked-artifact scan, production secret/debug scan, and the focused forbidden-capability suite.
+- Final review: `dev@7fb5702` received `Critical: 0`, `Important: 0`, `Minor: 0`, and `Ready to deliver: Yes` after the Task 9 record was added.
+- GitHub delivery: native Git HTTPS remained unavailable, so the reviewed `dev@7fb5702` tree was published through the Git Data API as `codex/jarvis-p0@5e3d5eb`; all 47 blob SHAs and modes matched the local tree exactly. [PR #1](https://github.com/mmy-001/jarvis-os-agent/pull/1) was `mergeable: true`, `mergeable_state: clean`, and merged normally into remote `main@1482e44` with both parents preserved. No force push or remote branch deletion occurred.
